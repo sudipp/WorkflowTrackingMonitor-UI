@@ -1,0 +1,10 @@
+
+License Agreement:
+
+CheckBox Studio WinForm controls, are permitted to be copied, referenced, and utilized by other development projects for any purpose.
+
+The provided controls are copyright protected; this protects the aggregation of control names, appearance, and behavior.
+
+Individuals or entities that create controls exactly, or similiar (enough to indicate that property was copied) to the provided controls, are in strict violation of the copyright.
+
+CheckBox Studio may not be held liable for any types of losses incurred from the provided controls.

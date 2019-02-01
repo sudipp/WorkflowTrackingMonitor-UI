@@ -1,0 +1,32 @@
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\WorkflowTrackingClient.exe
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\WorkflowTrackingClient.pdb
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\CheckBoxStudio.WinForms.dll
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\MagicLibrary.dll
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\XMLFileTrackingService.dll
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\XMLFileTrackingService.pdb
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\CheckBoxStudio.WinForms.xml
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\ResolveAssemblyReference.cache
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.FindForm.resources
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.MainForm.resources
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.Properties.Resources.resources
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.SettingsForm.resources
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.csproj.GenerateResource.Cache
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.exe
+C:\DATA\ccviews\CM_DEV\ahm_escm_ngm_dev\NextGenMove\Source Code\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.pdb
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.exe
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.pdb
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.FindForm.resources
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.MainForm.resources
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.Properties.Resources.resources
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.SettingsForm.resources
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.csproj.GenerateResource.Cache
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\WorkflowTrackingClient.exe
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\WorkflowTrackingClient.pdb
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\CheckBoxStudio.WinForms.dll
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\MagicLibrary.dll
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\XMLFileTrackingService.dll
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\CheckBoxStudio.WinForms.xml
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\ApexWorkflowMonitor\WorkflowTrackingClient\WorkflowTrackingClient\bin\Debug\XMLFileTrackingService.pdb
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\WorkflowTrackingMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.exe
+C:\Users\Sudip Purkayastha\Desktop\Source Code\WF\WorkflowTrackingMonitor\WorkflowTrackingClient\WorkflowTrackingClient\obj\Debug\WorkflowTrackingClient.pdb

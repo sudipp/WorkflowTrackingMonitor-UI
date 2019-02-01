@@ -1,0 +1,493 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CheckBoxStudio.WinForms</name>
+    </assembly>
+    <members>
+        <member name="T:CheckBoxStudio.WinForms.OrgPanelControlCollection">
+            <summary>Represents a collection of <see cref="T:System.Windows.Forms.Control"/> objects.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanelControlCollection.Add(System.Windows.Forms.Control)">
+            <summary>Creates a node with the specified control and adds it to the end of the root node collection.</summary>
+            <param name="control">The control of the new node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanelControlCollection.Add(System.Windows.Forms.Control,System.Windows.Forms.Control)">
+            <summary>Creates a node with the specified control and adds it to the end of the node collection of the specified parent control.</summary>
+            <param name="control">The control of the new node.</param>
+            <param name="parent">The parent control of the new node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanelControlCollection.Add(System.Windows.Forms.Control,System.Windows.Forms.Control,CheckBoxStudio.WinForms.OrgLinkColorStyle,System.Drawing.Color,System.Drawing.Color,System.Boolean)">
+            <summary>Creates a node with the specified control, sets the specified styles, and adds it to the end of the node collection of the specified parent control.</summary>
+            <param name="control">The control of the new node.</param>
+            <param name="parent">The parent control of the new node.></param>
+            <param name="linkColorStyle">The link color style of the new node.</param>
+            <param name="nodeBackColor">The background color of the new node.</param>
+            <param name="nodeBorderColor">The border color of the new node.</param>
+            <param name="shadowVisible">Determines whether the shadow is visible for the new node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanelControlCollection.Remove(System.Windows.Forms.Control)">
+            <summary>Removes the node associated with the specified control and ascends all child nodes to the parent.</summary>
+            <param name="control">The control associated with the node to remove.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanelControlCollection.Clear">
+            <summary>Removes all nodes from the panel.</summary>
+        </member>
+        <member name="T:CheckBoxStudio.WinForms.OrgLinkLineStyle">
+            <summary>Specifies the line style for all links in a <see cref="T:CheckBoxStudio.WinForms.OrgPanel"/>.</summary>
+        </member>
+        <member name="F:CheckBoxStudio.WinForms.OrgLinkLineStyle.Default">
+            <summary>Line is drawn vertically and horizontally from the parent to the child.</summary>
+        </member>
+        <member name="F:CheckBoxStudio.WinForms.OrgLinkLineStyle.Direct">
+            <summary>Line is drawn diagonally from the parent directly to the child.</summary>
+        </member>
+        <member name="T:CheckBoxStudio.WinForms.OrgPanel">
+            <summary>Represents a panel that lays out content in an organized hierarchy with each control representing a node.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:CheckBoxStudio.WinForms.OrgPanel"/> class.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetLinkColorStyle(System.Windows.Forms.Control)">
+            <summary>Gets the color style of the link to the parent node.</summary>
+            <param name="control">A child control of the panel.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.SetLinkColorStyle(System.Windows.Forms.Control,CheckBoxStudio.WinForms.OrgLinkColorStyle)">
+            <summary>Sets the color style of the link to the parent node.</summary>
+            <param name="control">A child control of the panel.</param>
+            <param name="value">The color style of the link.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetNodeBackColor(System.Windows.Forms.Control)">
+            <summary>Gets the background color of the margin around the node control.</summary>
+            <param name="control">A child control of the panel.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.SetNodeBackColor(System.Windows.Forms.Control,System.Drawing.Color)">
+            <summary>Sets the background color of the margin around the node control.</summary>
+            <param name="control">A child control of the panel.</param>
+            <param name="value">The background color of the node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetNodeBorderColor(System.Windows.Forms.Control)">
+            <summary>Gets the border color of the margin around the node control.</summary>
+            <param name="control">A child control of the panel.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.SetNodeBorderColor(System.Windows.Forms.Control,System.Drawing.Color)">
+            <summary>Sets the border color of the margin around the node control.</summary>
+            <param name="control">A child control of the panel.</param>
+            <param name="value">The border color of the node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetShadowVisible(System.Windows.Forms.Control)">
+            <summary>Gets a value indicating whether the node shadow is visible.</summary>
+            <param name="control">A child control of the panel.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.SetShadowVisible(System.Windows.Forms.Control,System.Boolean)">
+            <summary>Sets a value indicating whether the node shadow is visible.</summary>
+            <param name="control">A child control of the panel.</param>
+            <param name="value">Determines whether the shadow is visible.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetParentControl(System.Windows.Forms.Control)">
+            <summary>Gets the parent control of the node.</summary>
+            <param name="control">A child control of the panel.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.SetParentControl(System.Windows.Forms.Control,System.Windows.Forms.Control)">
+            <summary>Sets the parent control of the node.</summary>
+            <param name="control">A child control of the panel.</param>
+            <param name="value">The parent control to set.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetSiblingIndex(System.Windows.Forms.Control)">
+            <summary>Gets the index of the node relative to other sibling nodes.</summary>
+            <param name="control">A child control of the panel.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.SetSiblingIndex(System.Windows.Forms.Control,System.Int32)">
+            <summary>Sets the index of the node relative to other sibling nodes.</summary>
+            <param name="control">A child control of the panel.</param>
+            <param name="value">The sibling index of the node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetDistance(System.Windows.Forms.Control,System.Drawing.Point)">
+            <summary>Retrieves the distance between the nearest edge of the specified control and coordinates.</summary>
+            <param name="control">The control used to determine the distance.</param>
+            <param name="pt">The coordinate point used to determine the distance.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetNearestControl(System.Drawing.Point)">
+            <summary>Retrieves the control located nearest to the specified coordinates.</summary>
+            <param name="pt">The coordinate point used to determine the nearest control.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetNearestControl(System.Drawing.Point,System.Int32)">
+            <summary>Retrieves the control located nearest to the specified coordinates within the specified maximum distance.</summary>
+            <param name="pt">The coordinate point used to determine the nearest control.</param>
+            <param name="maxDistance">The maximum distance to determine the nearest control.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetNearestControl(System.Drawing.Point,System.Int32,System.Windows.Forms.Control[])">
+            <summary>Retrieves the control located nearest to the specified coordinates within the specified maximum distance, optionally ignoring the specified controls.</summary>
+            <param name="pt">The coordinate point used to determine the nearest control.</param>
+            <param name="maxDistance">The maximum distance to determine the nearest control.</param>
+            <param name="ignore">The controls to ignore while determining the nearest control.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetTargetControl(System.Drawing.Point)">
+            <summary>Retrieves the control that is the parent target of the specified coordinates.</summary>
+            <param name="pt">The coordinate point used to determine the target.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetTargetControl(System.Drawing.Point,System.Int32)">
+            <summary>Retrieves the control that is the parent target of the specified coordinates within the specified maximum distance.</summary>
+            <param name="pt">The coordinate point used to determine the target.</param>
+            <param name="maxDistance">The maximum distance to determine the target.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetTargetControl(System.Drawing.Point,System.Windows.Forms.Control[])">
+            <summary>Retrieves the control that is the parent target of the specified coordinates, optionally ignoring the specified controls.</summary>
+            <param name="pt">The coordinate point used to determine the target.</param>
+            <param name="ignore">The controls to ignore while determining the target.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetTargetControl(System.Drawing.Point,System.Int32,System.Windows.Forms.Control[])">
+            <summary>Retrieves the control that is the parent target of the specified coordinates within the specified maximum distance, optionally ignoring the specified controls.</summary>
+            <param name="pt">The coordinate point used to determine the target.</param>
+            <param name="maxDistance">The maximum distance to determine the target.</param>
+            <param name="ignore">The controls to ignore while determining the target.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetTargetIndex(System.Windows.Forms.Control,System.Drawing.Point)">
+            <summary>Retrieves the target index position of the specified coordinates.</summary>
+            <param name="target">The target control used to determine the index.</param>
+            <param name="pt">The coordinate point used to determine the index.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.GetTargetIndex(System.Windows.Forms.Control,System.Drawing.Point,System.Windows.Forms.Control[])">
+            <summary>Retrieves the target index position of the specified coordinates, optionally ignoring the specified controls.</summary>
+            <param name="target">The target control used to determine the index.</param>
+            <param name="pt">The coordinate point used to determine the index.</param>
+            <param name="ignore">The controls to ignore while determining the index.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.OnBeforeExpand(CheckBoxStudio.WinForms.OrgPanelCancelEventArgs)">
+            <summary>Raises the BeforeExpand event.</summary>
+            <param name="e">A <see cref="T:CheckBoxStudio.WinForms.OrgPanelCancelEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.OnBeforeCollapse(CheckBoxStudio.WinForms.OrgPanelCancelEventArgs)">
+            <summary>Raises the BeforeCollapse event.</summary>
+            <param name="e">A <see cref="T:CheckBoxStudio.WinForms.OrgPanelCancelEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.OnAfterExpand(CheckBoxStudio.WinForms.OrgPanelEventArgs)">
+            <summary>Raises the AfterExpand event.</summary>
+            <param name="e">A <see cref="T:CheckBoxStudio.WinForms.OrgPanelEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.OnAfterCollapse(CheckBoxStudio.WinForms.OrgPanelEventArgs)">
+            <summary>Raises the AfterCollapse event.</summary>
+            <param name="e">A <see cref="T:CheckBoxStudio.WinForms.OrgPanelEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.CreateControlsInstance">
+            <summary>Creates a new instance of the control collection for the control.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.OnLayout(System.Windows.Forms.LayoutEventArgs)">
+            <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout"/> event.</summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.LayoutEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>Paints the background of the control.</summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint"/> event.</summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.OnMouseClick(System.Windows.Forms.MouseEventArgs)">
+            <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseClick"/> event.</summary>
+            <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanel.Dispose(System.Boolean)">
+            <summary>Clean up any resources being used.</summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="E:CheckBoxStudio.WinForms.OrgPanel.BeforeExpand">
+            <summary>Occurs before a node is expanded.</summary>
+        </member>
+        <member name="E:CheckBoxStudio.WinForms.OrgPanel.BeforeCollapse">
+            <summary>Occurs before a node is collapsed.</summary>
+        </member>
+        <member name="E:CheckBoxStudio.WinForms.OrgPanel.AfterExpand">
+            <summary>Occurs after a node is expanded.</summary>
+        </member>
+        <member name="E:CheckBoxStudio.WinForms.OrgPanel.AfterCollapse">
+            <summary>Occurs after a node is collapsed.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.Controls">
+            <summary>Gets the collection of controls contained within the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.Nodes">
+            <summary>Gets the collection of root nodes associated with the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.BackColor">
+            <summary>Gets or sets the background color of the panel control.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.BorderStyle">
+            <summary>Gets or sets the border style of the panel control.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.BackgroundImage">
+            <summary></summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.BackgroundImageLayout">
+            <summary></summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.Padding">
+            <summary>Gets or sets the internal spacing of the panel control.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.AutoScrollMargin">
+            <summary>Gets or sets the size of the auto-scroll margin.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.Orientation">
+            <summary>Gets or sets the orientation of nodes organized in the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.ParentSpacing">
+            <summary>Gets or sets the spacing between parent and child nodes in the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.SiblingSpacing">
+            <summary>Gets or sets the spacing between sibling nodes in the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.NodeMargin">
+            <summary>Gets or sets the margin of each node control in the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.ShowRootLines">
+            <summary>Gets or sets a value indicating whether lines are displayed for root nodes in the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.ShowPlusMinus">
+            <summary>Gets or sets a value indicating whether plus/minus buttons are displayed with parent nodes in the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.ControlBackColor">
+            <summary>Gets or sets the color for child controls that use ambient background colors.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.LinkLineStyle">
+            <summary>Gets or sets the line style of all links between parent and child nodes in the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.LinkBackColor">
+            <summary>Gets or sets the color for all background links in the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.LinkForeColor">
+            <summary>Gets or sets the color for all foreground links in the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.ShadowOffset">
+            <summary>Gets or sets the shadow offset for each node in the panel.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanel.ShadowColor">
+            <summary>Gets or sets the shadow color for each node in the panel.</summary>
+        </member>
+        <member name="T:CheckBoxStudio.WinForms.OrgLinkColorStyle">
+            <summary>Specifies the link color style for a <see cref="T:CheckBoxStudio.WinForms.OrgNode"/>.</summary>
+        </member>
+        <member name="F:CheckBoxStudio.WinForms.OrgLinkColorStyle.None">
+            <summary>No color style.</summary>
+        </member>
+        <member name="F:CheckBoxStudio.WinForms.OrgLinkColorStyle.Background">
+            <summary>Link background color.</summary>
+        </member>
+        <member name="F:CheckBoxStudio.WinForms.OrgLinkColorStyle.Foreground">
+            <summary>Link foreground color.</summary>
+        </member>
+        <member name="T:CheckBoxStudio.WinForms.OrgNode">
+            <summary>Represents a node of a <see cref="T:CheckBoxStudio.WinForms.OrgPanel"/>.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.#ctor(System.String)">
+            <summary>Initializes a new instance of the <see cref="T:CheckBoxStudio.WinForms.OrgNode"/> class with a new label control using the specified text.</summary>
+            <param name="text">The text for the new label control of the node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.#ctor(System.Windows.Forms.Control)">
+            <summary>Initializes a new instance of the <see cref="T:CheckBoxStudio.WinForms.OrgNode"/> class with the specified control.</summary>
+            <param name="control">The control of the new node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.Expand">
+            <summary>Expands the current node.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.Expand(System.Boolean)">
+            <summary>Expands the current node, and optionally all subnodes.</summary>
+            <param name="all">Set to true to expand all subnodes.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.Collapse">
+            <summary>Collapses the current node.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.Collapse(System.Boolean)">
+            <summary>Collapses the current node, and optionally all subnodes.</summary>
+            <param name="all">Set to true to collapse all subnodes.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.Toggle">
+            <summary>Toggles the current node by expanding or collapsing.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.Find(System.Windows.Forms.Control)">
+            <summary>Returns the current node, or subnode, associated with the specified control.</summary>
+            <param name="control">The specified control to find.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.FindAll(System.Windows.Forms.Control[])">
+            <summary>Returns the current node, and any subnodes, associated with the specified controls.</summary>
+            <param name="controls">The specified controls to find.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.GetAllControls">
+            <summary>Returns all controls for the current node and subnodes.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.AscendNodes">
+            <summary>Moves all child nodes up to the parent node of the current node.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.Remove">
+            <summary>Removes the current node, and all subnodes, from the panel.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.Remove(System.Boolean)">
+            <summary>Removes the current node from the panel, and optionally ascends child nodes.</summary>
+            <param name="ascendNodes">Determines whether to ascend the child nodes.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.Remove(System.Boolean,System.Boolean)">
+            <summary>Removes the current node from the panel, and optionally ascends child nodes and disposes resources.</summary>
+            <param name="ascendNodes">Determines whether to ascend the child nodes.</param>
+            <param name="dispose">Determines whether to dispose resources in the current node and subnodes.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNode.ToString">
+            <summary>Returns a <see cref="T:System.String"/> representing the associated control of the node.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.Parent">
+            <summary>Gets the parent node of the current node.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.Panel">
+            <summary>Gets the panel that the current node is assigned to.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.Control">
+            <summary>Gets the control of the current node.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.Nodes">
+            <summary>Gets the collection of child nodes of the current node.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.PrevNode">
+            <summary>Gets the previous sibling node of the current node.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.NextNode">
+            <summary>Gets the next sibling node of the current node.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.FirstNode">
+            <summary>Gets the first child node of the current node.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.LastNode">
+            <summary>Gets the last child node of the current node.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.Level">
+            <summary>Gets the level of the current node relative to the root.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.Index">
+            <summary>Gets the zero-based index of the current node relative to other sibling nodes.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.IsCollapsed">
+            <summary>Gets a value indicating whether the current node is collapsed by any parent node.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.LinkColorStyle">
+            <summary>Gets or sets the color style of the link from the current node to the parent node.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.BackColor">
+            <summary>Gets or sets the background color of the margin around the node control.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.BorderColor">
+            <summary>Gets or sets the border color of the margin around the node control.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.ShadowVisible">
+            <summary>Gets or sets a value indicating whether the shadow is displayed for the current node.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNode.Expanded">
+            <summary>Gets or sets a value indicating whether the current node is expanded.</summary>
+        </member>
+        <member name="T:CheckBoxStudio.WinForms.OrgNodeCollection">
+            <summary>Represents a collection of <see cref="T:CheckBoxStudio.WinForms.OrgNode"/> objects.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.GetEnumerator">
+            <summary>Returns an enumerator that iterates through the node collection.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Add(System.String)">
+            <summary>Creates a node with a new label control using the specified text and adds it to the end of the collection.</summary>
+            <param name="text">The text for the new label control of the node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Add(System.Windows.Forms.Control)">
+            <summary>Creates a node with the specified control and adds it to the end of the collection.</summary>
+            <param name="control">The control of the new node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Add(CheckBoxStudio.WinForms.OrgNode)">
+            <summary>Adds the specified node to the end of the collection.</summary>
+            <param name="node">The node to add to the collection.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Insert(System.Int32,System.String)">
+            <summary>Creates a node with a new label control using the specified text and inserts it into the collection at the specified index.</summary>
+            <param name="index">The location within the colleciton to insert the node.</param>
+            <param name="text">The text for the new label control of the node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Insert(System.Int32,System.Windows.Forms.Control)">
+            <summary>Creates a node with the specified control and inserts it into the collection at the specified index.</summary>
+            <param name="index">The location within the colleciton to insert the node.</param>
+            <param name="control">The control of the new node.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Insert(System.Int32,CheckBoxStudio.WinForms.OrgNode)">
+            <summary>Inserts the specified node into the collection at the specified index.</summary>
+            <param name="index">The location within the collection to insert the node.</param>
+            <param name="node">The node to insert to the collection.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.IndexOf(CheckBoxStudio.WinForms.OrgNode)">
+            <summary>Returns the index of the specified node in the collection.</summary>
+            <param name="node">The node to locate in the collection.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Contains(CheckBoxStudio.WinForms.OrgNode)">
+            <summary>Determines whether the collection contains the specified node.</summary>
+            <param name="node">The node to locate in the collection.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Find(System.Windows.Forms.Control)">
+            <summary>Finds the node associated with the specified control in the collection or any subnodes.</summary>
+            <param name="control">The control associated with the node to find.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.FindAll(System.Windows.Forms.Control[])">
+            <summary>Finds all nodes associated with the specified controls in the collection or any subnodes.</summary>
+            <param name="controls">The controls associated with the nodes to find.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Remove(System.Int32)">
+            <summary>Removes a node from the collection at the specified index.</summary>
+            <param name="index">The location of the node in the collection.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Remove(System.Int32,System.Boolean)">
+            <summary>Removes a node from the collection at the specified index, and optionally disposes resources.</summary>
+            <param name="index">The location of the node in the collection.</param>
+            <param name="dispose">Determines whether to dispose resources at the specified index and subnodes.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Remove(CheckBoxStudio.WinForms.OrgNode)">
+            <summary>Removes the specified node from the collection.</summary>
+            <param name="node">The node to remove from the collection.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Remove(CheckBoxStudio.WinForms.OrgNode,System.Boolean)">
+            <summary>Removes the specified node from the collection, and optionally disposes resources.</summary>
+            <param name="node">The node to remove from the collection.</param>
+            <param name="dispose">Determines whether to dispose resources in the specified node and subnodes.</param>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgNodeCollection.Clear">
+            <summary>Removes all nodes from the collection.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNodeCollection.Count">
+            <summary>Gets the number of nodes contained in the collection.</summary>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgNodeCollection.Item(System.Int32)">
+            <summary>Gets the node at the specified index in the collection.</summary>
+            <param name="index">The location of the node in the collection.</param>
+        </member>
+        <member name="T:CheckBoxStudio.WinForms.OrgPanelEventHandler">
+            <summary>Represents the method that will handle the AfterExpand and AfterCollapse events of a <see cref="T:CheckBoxStudio.WinForms.OrgPanel"/>.</summary>
+            <param name="sender">The object raising the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="T:CheckBoxStudio.WinForms.OrgPanelCancelEventHandler">
+            <summary>Represents the method that will handle the BeforeExpand and BeforeCollapse events of a <see cref="T:CheckBoxStudio.WinForms.OrgPanel"/>.</summary>
+            <param name="sender">The object raising the event.</param>
+            <param name="e">The data for the event.</param>
+        </member>
+        <member name="T:CheckBoxStudio.WinForms.OrgPanelEventArgs">
+            <summary>Provides data for the AfterExpand and AfterCollapse events of a <see cref="T:CheckBoxStudio.WinForms.OrgPanel"/>.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanelEventArgs.#ctor(CheckBoxStudio.WinForms.OrgNode)">
+            <summary>Initializes a new instance of the <see cref="T:CheckBoxStudio.WinForms.OrgPanelEventArgs"/> class with the specified node.</summary>
+            <param name="node">The node that has been expanded or collapsed.</param>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanelEventArgs.Node">
+            <summary>Gets the node that has been expanded or collapsed.</summary>
+        </member>
+        <member name="T:CheckBoxStudio.WinForms.OrgPanelCancelEventArgs">
+            <summary>Provides data for the BeforeExpand and BeforeCollapse events of a <see cref="T:CheckBoxStudio.WinForms.OrgPanel"/>.</summary>
+        </member>
+        <member name="M:CheckBoxStudio.WinForms.OrgPanelCancelEventArgs.#ctor(CheckBoxStudio.WinForms.OrgNode,System.Boolean)">
+            <summary>Initializes a new instance of the <see cref="T:CheckBoxStudio.WinForms.OrgPanelCancelEventArgs"/> class with the specified node
+            and a value specifying whether the event is to be cancelled.</summary>
+            <param name="node">The node that has been expanded or collapsed.</param>
+            <param name="cancel">A value specifying whether the event is to be cancelled.&gt;</param>
+        </member>
+        <member name="P:CheckBoxStudio.WinForms.OrgPanelCancelEventArgs.Cancel">
+            <summary>Gets or sets a value specifying whether the event is to be cancelled.</summary>
+        </member>
+    </members>
+</doc>
